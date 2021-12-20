@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <title>Meal by Ingredient</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <div class="bg-sky-600 py-24 h-96 flex justify-center">
@@ -66,7 +67,7 @@
           "
         >
           <div class="meal-image">
-            <img src="./fried-rice.jpg" alt="Meal image" />
+            <img src="./fried-rice.jpg" alt="Meal name" />
           </div>
           <div class="meal-name pt-6 pb-10 px-6">
             <h3 class="text-2xl text-center">Fried Rice</h3>
@@ -89,18 +90,36 @@
             </divn>
           </div>
         </div>
-
       </div>
     </div>
 
-    <div class="meal-details-overlay">
-      <div class="meal-details">
+    <div class="meal-details-overlay flex justify-center items-center">
+      <div class="meal-details w-2/4 bg-white h-3/4 rounded-lg p-5">
         <!-- close btn -->
-        <button type="button">
-          <i class="fa fa-close"></i>
+        <button type="button" class="float-right">
+          <i class="fa fa-close text-2xl hover:text-red-300"></i>
         </button>
+
+        <!-- Meal contents -->
+        <div class="meal-details-content text-center">
+          <h3 class="text-3xl text-sky-500 mb-2">Meal Name Here</h3>
+          <p class="text-xl">
+            Category: <span class="text-sky-300">Meal Category</span>
+          </p>
+          <div class="mt-2 px-32">
+            <h4 class="text-2xl">Instructions:</h4>
+            <p class="my-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              dolorum ratione quisquam consequuntur eos, et nesciunt facere eius
+              obcaecati corporis quaerat sit eaque dolore! Aspernatur
+              reprehenderit ipsa veritatis assumenda maxime!
+            </p>
+          </div>
+          <div class="recipe-meal-image flex justify-center mt-5">
+            <img src="./fried-rice.jpg" alt="Meal name" class="w-2/5 h-2/5 rounded-lg shadow-lg" />
+          </div>
+        </div>
       </div>
     </div>
-
   </body>
 </html>
